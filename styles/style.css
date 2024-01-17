@@ -1,0 +1,276 @@
+@charset "utf-8";
+/* CSS Document */
+/* Author: Manwel QARYAQOS, Md Fazlay Rabbi, Elisha Vihanga Wijesingha, Sariya Akhter Lura, Minh Duy Vu;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* common css starts here */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  line-height: 1.5;
+  font-family: 'Poppins', sans-serif;
+  background-image: url('images/bg2.webp');
+  background-size: cover;
+}
+
+h1 {
+  color: #b564ba;
+  font-size: 33px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.container {
+  max-width: 1170px;
+  margin:auto;
+}
+
+.Site {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  max-width: 1450px;
+  margin: auto;
+}
+
+.Site-content {
+  flex: 1;
+}
+/* common css ends here */
+
+/* header section css starts */
+header {
+  width: 100%;
+  display: block;
+  overflow: hidden;
+}
+
+.wrapper {
+  width: 1170px;
+  margin:auto;
+}
+
+#index {
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+}
+
+/* navigation section css starts */
+.nav-area {
+  float: right;
+  list-style: none;
+  margin-top: 50px;
+}
+
+.nav-area li {
+  display: inline-block;
+}
+
+.nav-area li a {
+  color: black;
+  background: #fff;
+  text-decoration: none;
+  padding: 5px 20px;
+  font-family: poppins;
+  font-size: 18px;
+}
+
+.nav-area li a:hover {
+  background: red;
+  color: #fff;
+}
+
+.logo img {
+  width: 300px;
+  float: left;
+  height: auto;
+}
+/* navigation section css ends */
+/* header section css ends */
+
+/* home welcome section css starts */
+.welcome-text {
+  
+  width: 600px;
+  margin: 5% auto;
+  text-align: center;
+height: 58vh;}
+
+.welcome-text h1 {
+  text-align: center;
+  color: #000;
+  text-transform: uppercase;
+  font-size: 60px
+;}
+
+.welcome-text a {
+  border: 1px solid #000;
+  padding: 10px 25px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  margin-top: 20px;
+  display: inline-block;
+  color: #000;
+}
+
+.welcome-text a:hover {
+  background: #fff;
+  color: #333;
+}
+/* home welcome section css ends */
+
+/* topic index data css starts  */
+aside {
+  width: 30%;
+  float: right;
+  border: 2px solid grey;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+  background: #c5a6a66b;
+}
+
+.ror_para {
+  width: 60%
+}
+
+table {
+    border-collapse: collapse;
+    width: 90%;
+    margin: 30px auto;
+}
+  
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+th {
+  background: antiquewhite;
+}
+  
+tr {
+  background-color: #d7e6fa;
+}
+/* topic index data css ends  */
+
+/* quiz form css starts */
+form {
+  margin: 0px 40px;
+}
+
+.formBtn {
+  padding: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  margin: 10px 0px;
+  background: antiquewhite;
+  border: 1px solid;
+  border-radius: 10px;
+  cursor: pointer;
+}
+/* quiz form css ends */
+
+/* footer section css starts */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+ul {
+  list-style: none;
+}
+
+.footer {
+  background-color: #24262b;
+  padding: 70px 0;
+  width: 100%;
+  font-style: italic;
+  text-align: center;
+}
+
+.footer-col {
+   width: 25%;
+}
+
+.footer-col h4 {
+  font-size: 18px;
+  color: #ffffff;
+  text-transform: capitalize;
+  margin-bottom: 35px;
+  font-weight: 500;
+  position: relative;
+}
+
+.footer-col h4::before {
+  content: '';
+  position: absolute;
+  left:0;
+  bottom: -10px;
+  background-color: #e91e63;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.footer-col ul {
+    padding: 0;
+}
+
+.footer-col ul li:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 300;
+  color: #bbbbbb;
+  display: block;
+  transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+  color: #ffffff;
+  padding-left: 8px;
+}
+
+.footer-col .social-links a {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(255,255,255,0.2);
+  margin:0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #ffffff;
+  transition: all 0.5s ease;
+}
+
+.footer-col .social-links a:hover {
+  color: #24262b;
+  background-color: #ffffff;
+}
+/* footer section css ends */
+
+/* responsive */
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+  }
+}
+
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+  }
+}
